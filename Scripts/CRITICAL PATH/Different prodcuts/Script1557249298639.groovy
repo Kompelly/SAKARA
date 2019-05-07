@@ -13,48 +13,48 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-// ADDING THE MEAL TO THE CART -CRITICAL PATH
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.sakara.com/')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/SAKARA/Page_100 plant-based organic ready-/div_Create an account_privy-di'))
+WebUI.click(findTestObject('SAKARA/Page_100 plant-based organic ready-/div_Create an account_privy-di'))
 
-WebUI.click(findTestObject('Object Repository/SAKARA/Page_100 plant-based organic ready-/a_Next Weeks Menu'))
+WebUI.click(findTestObject('SAKARA/Page_100 plant-based organic ready-/a_Next Weeks Menu'))
 
-WebUI.click(findTestObject('Object Repository/SAKARA/Page_Next weeks menu  Sakara Life/a_Order Now'))
+WebUI.click(findTestObject('SAKARA/Page_Next weeks menu  Sakara Life/a_Order Now'))
 
-WebUI.setText(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/input'), '07057')
+WebUI.setText(findTestObject('SAKARA/Page_OMD Order  Sakara Life/input (1)'), '07057')
 
-WebUI.click(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/span_Program Length_o-radio__c'))
+WebUI.click(findTestObject('SAKARA/Page_OMD Order  Sakara Life/span_Program Length_o-radio__c (1)'))
 
-WebUI.click(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/span_Weekly Subscription_o-rad'))
+WebUI.click(findTestObject('SAKARA/Page_OMD Order  Sakara Life/span_Weekly Subscription_o-rad (1)'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/select_Monday May 13thMonday M'), 
-    'Mon May 20 2019 00:00:00 GMT-0400', true)
+WebUI.selectOptionByValue(findTestObject('SAKARA/Page_OMD Order  Sakara Life/select_Monday May 13thMonday M (1)'), 'Mon May 20 2019 00:00:00 GMT-0400', 
+    true)
 
-WebUI.click(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/button_Add to cart'))
+WebUI.click(findTestObject('SAKARA/Page_OMD Order  Sakara Life/button_Add to cart (1)'))
 
-WebUI.click(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/span_Daily Probiotics_o-radio_'))
+WebUI.click(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/span_Terms  Conditions_o-icon'))
 
-WebUI.click(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/span_Beauty Chocolates_o-radio'))
+WebUI.click(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/a_Shop Clean Boutique'))
 
-WebUI.click(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/span_Program Supplement_o-radi'))
+WebUI.click(findTestObject('Object Repository/SAKARA/Page_Clean Boutique  Sakara Life/span_Snacks'))
 
-WebUI.click(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/a_checkout 255'))
+WebUI.click(findTestObject('SAKARA/Page_Clean Boutique  Sakara Life/img_Add to cart_c-product-tile'))
+
+WebUI.click(findTestObject('Object Repository/SAKARA/Page_The Sakara Granola Collection/button_48  Add to cart'))
+
+WebUI.click(findTestObject('SAKARA/Page_The Sakara Granola Collection/a_checkout 397'))
 
 WebUI.setText(findTestObject('SAKARA/Page_OMD Order  Sakara Life/input_Sign in to continue_cust'), 'suman.kompelly@diffagency.com')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/input_Sign in to continue_cust_1'), 
-    'ku0iAkODgX0=')
+WebUI.setEncryptedText(findTestObject('SAKARA/Page_OMD Order  Sakara Life/input_Sign in to continue_cust_1'), 'ku0iAkODgX0=')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/input_Sign in to continue_cust_2'), 
-    '+YAmoKIyHZA=')
+WebUI.setEncryptedText(findTestObject('SAKARA/Page_OMD Order  Sakara Life/input_Sign in to continue_cust_2'), '+YAmoKIyHZA=')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/input_Sign in to continue_cust_3'), 
-    'Y4IGv/qOF9E=')
+WebUI.setEncryptedText(findTestObject('SAKARA/Page_OMD Order  Sakara Life/input_Sign in to continue_cust_3'), 'Y4IGv/qOF9E=')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/SAKARA/Page_OMD Order  Sakara Life/input_Sign in to continue_cust_4'), 
     'Z+t+WaCK0tE=')
@@ -116,13 +116,13 @@ WebUI.setText(findTestObject('Object Repository/SAKARA/Page_Sakara Life - Shippi
 
 WebUI.click(findTestObject('Object Repository/SAKARA/Page_Sakara Life - Shipping - Sakar/button_Apply'))
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Object Repository/SAKARA/Page_Sakara Life - Shipping - Sakar/input_Choose a shipping method'))
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/SAKARA/Page_Sakara Life - Shipping - Sakar/button_Continue to payment met'))
-
-not_run: WebUI.click(findTestObject('Object Repository/SAKARA/Page_Sakara Life - Payment - Sakara/button_Complete order'))
 
 WebUI.comment(' Test case passed ')
 
